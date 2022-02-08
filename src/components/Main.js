@@ -7,7 +7,6 @@ import { useStore } from '../store';
 function Main() {
   const [stateG_Data] = useStore();
   const {pathname} = useLocation();
-  console.log(window)
   useEffect(() => {
     window.scrollTo(0, 0)
   },[pathname])
